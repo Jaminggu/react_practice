@@ -1,28 +1,17 @@
-import { useState } from "react";
-import data from "../cardInform.js"
-
-export default function Card() {
-    let [inform] = useState(data);
+export default function Card({ data }) {
     return(
-        <div className="card-grid">
-            {
-                inform.map((a, i)=> 
-                <div className="card-background">
-                    <img className="card-userpic" src={ `/Userpic ${i + 1}.png` }/>
-                    <div className="card-inform">
-                        <img src="/Angle.png" />
-                        <p className="card-name">{ inform[i].name }</p>
-                        <p className="card-job">{ inform[i].job }</p>
-                        <p className="card-explain">
-                        { inform[i].inform } </p>
-                        <div className="card-twitter">
-                            <img src="Twitter.png" />
-                            <p className="card-twitter-id">{ inform[i].twiterId }</p>
-                        </div>
-                    </div>
-                    </div>
-                )
-            }
-        </div>
+        <>
+            <img className="card-userpic" src={ data.img }/>
+            <div className="card-inform">
+                <img src="/Angle.png" />
+                <p>{ data.name }</p>
+                <p>{ data.job }</p>
+                <p>{ data.inform }</p>
+                <div className="card-twitter">
+                    <img src="Twitter.png" />
+                    <p>{ data.twiterId }</p>
+                </div>
+            </div>
+        </>
     );
 }

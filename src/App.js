@@ -1,5 +1,5 @@
 import './App.css';
-import './App_mediaQuary.css';
+import './App_mediaQuery.css';
 import Header from './Components/Header';
 import Middle from './Components/Middle';
 import Bottom from './Components/Bottom';

@@ -1,0 +1,75 @@
+@media screen and (max-width : 768px) { 
+    .wrapping { 
+      width: 375px;
+      height: 685px;
+    } 
+  
+    .header-background {
+      height: 74px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 25px 30px 25px 30px;
+    } 
+    .header-background>img {
+      width: 91.9px;
+      height: 25px;
+    }
+  
+    .header-contents, .header-search {
+      display: none;
+    }
+    #menu {
+      width: 20px;
+      height: 14px;
+      display: block;
+      cursor: pointer;
+    }  
+  
+    .middle-background {
+      height: 284px;
+      padding: 35px 30px 26px 30px;
+    }
+    .middle-background>span {
+      font-size: 34px;
+      line-height: 42px;
+      letter-spacing: -0.2px;
+    }
+    .middle-background>p {
+      font-size: 17px;
+      line-height: 30px;
+      letter-spacing: 0.2px;
+    }
+  
+    .middle-facebook {
+      width: 315px;
+      height: 54px;
+      margin-top: 26px;
+    }
+  
+    .middle-form-explain {
+      column-gap: 22px;
+      padding-top: 30px;
+    }
+    .middle-form-explain div {
+      width: 60px;
+    }
+  
+    .bottom-background {
+      padding-top: 33px;
+    }
+    .bottom-account-input input {
+      width: 315px;
+      height: 38px;
+    }
+    .bottom-background>button {
+      width: 315px;
+      height: 54px;
+      margin-top: 30px;
+    }
+    .bottom-background>p {
+      margin: 27px 28px 15px 28px;
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: 0.1px;
+      color: #ffffff;
+    }
+  }

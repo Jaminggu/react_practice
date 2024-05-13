@@ -23,7 +23,7 @@ const router = createBrowserRouter([
       { path: "/products", element: <AllProducts /> },
       {
         path: "/products/new",
-        element: (
+        element: ( // admin인 사용자만 접근할 수 있음
           <ProtectedRoute requireAdmin>
             <NewProduct />
           </ProtectedRoute>
@@ -32,7 +32,7 @@ const router = createBrowserRouter([
       { path: "/products/:id", element: <ProductDetail /> },
       {
         path: "/carts",
-        element: (
+        element: ( // 로그인한 사용자만 접근할 수 있음
           <ProtectedRoute>
             <MyCart />
           </ProtectedRoute>
